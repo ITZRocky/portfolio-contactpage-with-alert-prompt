@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function Check(){
+            var Name=document.getElementById("name").value;
+            var Age=document.getElementById("age").value;
+           
+            if(Name!=null && Age=="")
+            {
+                alert(`entered name is ${Name} `);
+                 res=prompt('enter your age ',12);
+                 document.getElementById("age").value=res;
+                 return false;
+            }
+        }
+
+        
+     
+    </script>
+</head>
+<body>
+    <section class="container">
+    <header>
+        <div class="navbar">
+            <h1 class="logo">Portfolio</h1>
+            <ul class="items">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#video">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+    </div>
+</header>
+
+
+<div class="something" id="home">
+    <div class="hero">
+    <div class="info-cover">
+        <p> Hello </p>
+        <p>I m Rohith Venkatesh</p>
+        <p>Full-stack web developer</p>
+    </div>
+    <img src="image/1.svg" alt="me" id="me">
+</div>
+    <div class="intro-vid" id="video">
+        <p>About</p>
+        <iframe  src="https://www.youtube.com/embed/0dmEPxyrXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="video" ></iframe>
+        <hr>
+
+
+    <h1 id="contact">Contact Form</h1>
+    <form action="" onsubmit="Check()" name="myform" >
+        <label for="name">Name :</label>
+        <input type="text" name="myname" id="name" placeholder="Your name here.." required>
+<br><br>
+        <label for="age">Age :</label>
+        <input type="number" name="myage" id="age" placeholder="Your age here.." >
+
+        <br><br>
+        <label  >Gender :</label>
+        
+
+        <input type="radio" name="myGender" id="male" required>
+        <label for="male" id="male-label">Male</label>
+
+        <input type="radio" name="myGender" id="female" >
+        <label for="female" id="male-label">Female</label>
+
+        <input type="radio" name="myGender" id="other" >
+        <label for="other" id="male-label">other</label>
+<br><br>
+        <input type="checkbox" name="iAgree" id="agree"  required>
+        <label for="agree">I agree to all t&c</label>
+<br>
+       <input type="submit" name="submit" value="Submit" id="sub-btn">
+        
+    </form>
+    <br>
+</div>
+</div>
+
+</section>
+<footer class="map-outer">
+    <h1>Address</h1>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.3390286837885!2d77.42924231464634!3d13.07768699078633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae24e402a8e223%3A0xdeb7a3be00bf6956!2sDevannanapalya!5e0!3m2!1sen!2sin!4v1631885834714!5m2!1sen!2sin"   style="border:0;border-radius: 2vw;" allowfullscreen="" loading="lazy" id="maps"></iframe>
+
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+*{
+    font-family: 'Righteous', cursive;
+}
+body{
+    background-color: wheat;
+}
+.container{
+    width: 100%;
+}
+.navbar{
+    margin: auto;
+    background-color: rgb(27, 26, 24);
+    display: flex;
+    justify-content: space-between;
+    width: 94vw;
+    height: 5vw;
+    align-items: center;
+    border-radius: 1vw;
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 1vw;
+}
+.navbar ul{
+margin-right: 2vw;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(97, 91, 85);
+    font-size: 1.2vw; 
+}
+
+.navbar ul li a:hover{
+    color: wheat;
+    cursor: pointer;
+}
+
+.logo{
+    color: rgb(97, 91, 85);
+    margin: 1vw;
+    font-size: 1.9vw;
+}
+
+.hero{
+    /* background-color: #fff; */
+    display: flex;
+   
+}
+
+.info-cover{
+    margin: 3.9vw 0 0 23vw;
+    background-color:rgb(36, 34, 34);
+    color: wheat;
+    border-radius: 3vw;
+    width: 47vw;
+    text-align: center;
+    font-size: 2.6vw;
+}
+.info-cover p:nth-last-child(3){
+    margin: 9.1vw 0 0 0;
+}
+#me{
+    margin-left: -29vw;
+    width: 40vw;
+}
+
+.intro-vid{
+   margin: 2.6vw;
+    background-color:rgb(36, 34, 34);
+    color: wheat;
+    border-radius: 3vw;
+    
+    width: 93vw;
+    text-align: center;
+    font-size: 2.6vw;
+}
+.intro-vid p{
+  padding: 2vw 0 0 0;
+  font-size: 3vw;
+}
+
+hr{
+    margin-top: 5vw;
+    width:60vw ;
+    height: 0.5vw;
+    border: none;
+    background-color: wheat;
+}
+
+.intro-vid #video{
+    border-radius: 2.5vw;
+    width: 50vw;
+    height: 30vw;
+}
+
+
+#contact{
+    font-size: 3vw;
+}
+form{
+    background-color: #fff;
+    width: 60vw;
+    margin-left: 13vw;
+    border-radius: 3vw;
+    padding: 3vw;
+    text-align: center;
+}
+
+form #name{
+    border-radius: 2vw;
+    width: 15vw;
+    padding: 0.7vw;
+    border: 0.13vw solid rgb(36, 34, 34);
+    font-size: 1vw;
+}
+
+form #name:focus{
+   outline: none;
+    
+}
+form #age:focus{
+    outline: none;
+     
+ }
+form #age{
+    border-radius: 2vw;
+    width: 15vw;
+    padding: 0.7vw;
+    margin-left: 2vw;
+    font-size: 1vw;
+    border: 0.13vw solid rgb(36, 34, 34);
+}
+
+form #male,#female,#other{
+    display: none;
+    overflow: hidden;
+    
+}
+form #male-label{
+    border: none;
+    border-radius: 1.3vw;
+    padding: 0.9vw;
+    font-size: 2vw;
+    background-color: rgb(36, 34, 34);
+}
+form #male:checked + #male-label {
+    background-color: wheat;
+    color: rgb(36, 34, 34);
+}
+form #female:checked + #male-label {
+    background-color: wheat;
+    color: rgb(36, 34, 34);
+}
+form #other:checked + #male-label {
+    background-color: wheat;
+    color: rgb(36, 34, 34);
+}
+form #male:hover + #male-label {
+    cursor: pointer;
+}
+form #female:hover + #male-label {
+    cursor: pointer;
+}
+form #other:hover + #male-label {
+    cursor: pointer;
+}
+
+
+#sub-btn{
+    border: none;
+    border-radius: 1.2vw;
+    background-color: rgb(36, 34, 34);
+    color: wheat;
+    font-size: 2vw;
+    padding: 1vw;
+    width: 20vw;
+    margin-top: 2.5vw;
+}
+
+#sub-btn:hover {
+    cursor: pointer;
+    background-color: wheat;
+    color: rgb(36, 34, 34);
+}
+#sub-btn:checked {
+    background-color: wheat;
+    color: rgb(36, 34, 34);
+}
+
+.map-outer{
+    margin: auto;
+    border-radius: 3vw;
+    background-color:rgb(36, 34, 34);
+    text-align: center;
+}
+#maps{
+    margin: 1.5vw;
+    width: 90vw;
+    height: 20vw;
+}
+.map-outer h1{
+    color: wheat;
+    padding-top: 2vw;
+    font-size: 3vw;
+}
+
